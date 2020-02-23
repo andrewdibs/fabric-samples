@@ -21,7 +21,7 @@ const Medicine = require('../contract/lib/medicine.js');
 
 // A inventory stores a collection of identities for use
 //const inventory = new FileSysteminventory('../user/dibella/inventory');
-const inventory = new FileSystemInventory('../identity/user/dibella/inventory');
+const inventory = new FileSystemInventory('../identity/user/isabella/inventory');
 
 // Main program function
 async function main() {
@@ -31,7 +31,7 @@ async function main() {
     try {
 
         // Specify userName for network access
-        // const userName = 'dibella.distributor@magnetocorp.com';
+        // const userName = 'dibella.distributor@labinc.com';
         const userName = 'User1@org1.example.com';
 
         // Load connection profile; will be used to locate a gateway
@@ -57,7 +57,7 @@ async function main() {
         // issue commercial med
         console.log('Submit commercial med issue transaction.');
 
-        const distributorResponse = await contract.submitTransaction('issue', 'MagnetoCorp', '00001', '2020-05-31', '2020-11-30', '5000000');
+        const distributorResponse = await contract.submitTransaction('issue', 'LabInc', '00001', '2020-05-31', '2020-11-30', '5000000');
          // process response
         console.log('Process issue transaction response.'+distributorResponse);
 

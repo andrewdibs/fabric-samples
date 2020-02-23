@@ -13,8 +13,8 @@
         p{
             color: black;
             text-align: center;
-            font-family: Brush Script MT;
-            font-size: 35px;
+            font-family: serif;
+            font-size: 50px;
         }
         
         body{
@@ -35,6 +35,11 @@
             color: black;
             padding-left: 55px;
             padding-right: 20px;
+        }
+        .search {
+            position: fixed;
+            padding-left: 600px;
+        }
     
     </style>
     </head>
@@ -47,7 +52,12 @@
 		<script src=""></script>
 
 		<p> Search For Block </p>
-
+        
+        <div class="Search">
+            <label for="search">Search</label>
+            <input type="text" id="search" name="search">
+        </div>
+        
 		<div class="text-block"> 
                 <input type="radio" id="hash#" name="sOption" value="Hash Number">
                 <label for="hash#">Hash#</label><br>
@@ -72,10 +82,6 @@
 
         </div>
 
-        <div class="Search">
-            <label for="search">Search</label>
-            <input type="text" id="search" name="search">
-        </div>
         
         <div class="buttons">
             
